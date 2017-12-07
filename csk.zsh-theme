@@ -5,7 +5,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}☿☿☿"
 
 local whoami="%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[green]%}%m%{$reset_color%}"
 local whereami=":%{$fg_bold[blue]%}%~%{$reset_color%}"
-local git_branch="\$(git_prompt_info)"
+local git_branch=" \$(git_prompt_info)"
 
-PROMPT="${whoami}${whereami} ${git_branch} >> "
+PROMPT="${whoami}${whereami}${git_branch} >> "
 RPROMPT='%{$fg[yellow]%}[%*]%{$reset_color%}'
